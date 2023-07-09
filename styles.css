@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+body {
+  background-color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 60px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.brand img {
+  width: 70px;
+}
+
+.song-container {
+  height: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.music-controls {
+  position: sticky;
+  bottom: 0;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-info-container {
+  position: absolute;
+  display: flex;
+  left: 20px;
+  color: white;
+}
+
+.song-info-container img {
+  width: 60px;
+  border-radius: 5px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.song-name {
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  font-weight: 400;
+}
+
+.song-singer {
+  font-size: 0.7rem;
+}
+
+.control-icons {
+  display: flex;
+  align-items: center;
+}
+
+.control-icons i {
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 2px 2px;
+}
+
+#forward-btn,
+#backward-btn {
+  color: rgb(164, 164, 164);
+}
+
+#forward-btn:hover,
+#backward-btn:hover {
+  color: white;
+}
+
+.song-list {
+  width: 50%;
+}
+
+.song-item {
+  height: 50px;
+  display: flex;
+  background-color: black;
+  color: white;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.song-item img {
+  width: 43px;
+  border-radius: 5px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.play-pause-icons {
+  padding: 0 5px;
+}
+
+.play-pause-icons i {
+  margin: 0 3px;
+}
+
+#myProgressBar {
+  width: 50vw;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 8px;
+}
+
+.song-duration {
+  font-size: 0.9rem;
+}
+.song-duration > i {
+  padding: 0 4px;
+}
